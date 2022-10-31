@@ -1,0 +1,45 @@
+.wrapper-pose {
+  width: 70vw;
+  margin: 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.svg__pose {
+  max-width: 50%;
+}
+
+.wrapper-pose p {
+  text-align: center;
+  color: var(--grey-dark);
+  font-weight: 500;
+}
+
+.wrapper-pose p:first-of-type {
+  margin-top: 1rem;
+}
+
+.wrapper-pose p:last-of-type {
+  margin-bottom: 1rem;
+}
+
+.wrapper__pose__btn {
+  width: 100%;
+  display: flex;
+}
+
+.wrapper__pose__btn button {
+  padding: 0.5rem;
+  font-weight: 500;
+  color: var(--grey-dark);
+  flex: 1;
+  background: none;
+  border: none;
+}
+
+.wrapper__pose__btn button:hover {
+  border-bottom: 0.1rem solid var(--grey-dark);
+  color: var(--dark);
+}
