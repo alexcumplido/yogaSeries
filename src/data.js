@@ -1,0 +1,99 @@
+import svg1 from './assets/posesAll/1.svg';
+import svg2 from './assets/posesAll/2.svg';
+import svg3 from './assets/posesAll/3.svg';
+import svg4 from './assets/posesAll/4.svg';
+import svg5 from './assets/posesAll/5.svg';
+import svg6 from './assets/posesAll/6.svg';
+import svg7 from './assets/posesAll/7.svg';
+import svg8 from './assets/posesAll/8.svg';
+import svg9 from './assets/posesAll/9.svg';
+import svg10 from './assets/posesAll/10.svg';
+import svg11 from './assets/posesAll/11.svg';
+import svg12 from './assets/posesAll/12.svg';
+import svg13 from './assets/posesAll/13.svg';
+import svg14 from './assets/posesAll/14.svg';
+import svg15 from './assets/posesAll/15.svg';
+import svg16 from './assets/posesAll/16.svg';
+import svg17 from './assets/posesAll/17.svg';
+import svg18 from './assets/posesAll/18.svg';
+import svg19 from './assets/posesAll/19.svg';
+import svg20 from './assets/posesAll/20.svg';
+import svg21 from './assets/posesAll/21.svg';
+import svg22 from './assets/posesAll/22.svg';
+import svg23 from './assets/posesAll/23.svg';
+import svg24 from './assets/posesAll/24.svg';
+import svg25 from './assets/posesAll/25.svg';
+import svg26 from './assets/posesAll/26.svg';
+import svg27 from './assets/posesAll/27.svg';
+import svg28 from './assets/posesAll/28.svg';
+import svg29 from './assets/posesAll/29.svg';
+import svg30 from './assets/posesAll/30.svg';
+import svg31 from './assets/posesAll/31.svg';
+import svg32 from './assets/posesAll/32.svg';
+import svg33 from './assets/posesAll/33.svg';
+import svg34 from './assets/posesAll/34.svg';
+import svg35 from './assets/posesAll/35.svg';
+import svg36 from './assets/posesAll/36.svg';
+import svg37 from './assets/posesAll/37.svg';
+import svg38 from './assets/posesAll/38.svg';
+import svg39 from './assets/posesAll/39.svg';
+import svg40 from './assets/posesAll/40.svg';
+import svg41 from './assets/posesAll/41.svg';
+import svg42 from './assets/posesAll/42.svg';
+import svg43 from './assets/posesAll/43.svg';
+import svg44 from './assets/posesAll/44.svg';
+import svg45 from './assets/posesAll/45.svg';
+import svg46 from './assets/posesAll/46.svg';
+import svg47 from './assets/posesAll/47.svg';
+import svg48 from './assets/posesAll/48.svg';
+
+export let data = [
+    { svg: svg1 },
+    { svg: svg2 },
+    { svg: svg3 },
+    { svg: svg4 },
+    { svg: svg5 },
+    { svg: svg6 },
+    { svg: svg7 },
+    { svg: svg8 },
+    { svg: svg9 },
+    { svg: svg10 },
+    { svg: svg11 },
+    { svg: svg12 },
+    { svg: svg13 },
+    { svg: svg14 },
+    { svg: svg15 },
+    { svg: svg16 },
+    { svg: svg17 },
+    { svg: svg18 },
+    { svg: svg19 },
+    { svg: svg20 },
+    { svg: svg21 },
+    { svg: svg22 },
+    { svg: svg23 },
+    { svg: svg24 },
+    { svg: svg25 },
+    { svg: svg26 },
+    { svg: svg27 },
+    { svg: svg28 },
+    { svg: svg29 },
+    { svg: svg30 },
+    { svg: svg31 },
+    { svg: svg32 },
+    { svg: svg33 },
+    { svg: svg34 },
+    { svg: svg35 },
+    { svg: svg36 },
+    { svg: svg37 },
+    { svg: svg38 },
+    { svg: svg39 },
+    { svg: svg40 },
+    { svg: svg41 },
+    { svg: svg42 },
+    { svg: svg43 },
+    { svg: svg44 },
+    { svg: svg45 },
+    { svg: svg46 },
+    { svg: svg47 },
+    { svg: svg48 },
+]
