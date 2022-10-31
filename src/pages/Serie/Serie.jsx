@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
 import { useState } from "react";
-import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.js";
+import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.jsx";
 
 export function Serie() {
   let location = useLocation();

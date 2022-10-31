@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.js";
+import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.jsx";
 import { Link } from "react-router-dom";
 
 export function CustomSerie() {

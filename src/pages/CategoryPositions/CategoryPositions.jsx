@@ -1,5 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
-import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.js";
+import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.jsx";
 
 export function CategoryPositions() {
   let location = useLocation();

@@ -1,83 +1,83 @@
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useContext } from "react";
-import { AuthContext } from "../../context/AuthContext.jsx";
-import { Login } from "../../components/Form/Login.jsx";
-import { Signup } from "../../components/Form/Signup.jsx";
+// import { AuthContext } from "../../context/AuthContext.jsx";
+// import { Login } from "../../components/Form/Login.jsx";
+// import { Signup } from "../../components/Form/Signup.jsx";
 
 export function Home({ login, signup, setLogin, setSignup }) {
-  let navigate = useNavigate();
-  const { setUserAuth } = useContext(AuthContext);
-  const [registeredUsers, setRegisteredUsers] = useState([]);
+  // let navigate = useNavigate();
+  // const { setUserAuth } = useContext(AuthContext);
+  // const [registeredUsers, setRegisteredUsers] = useState([]);
 
-  const [userSignup, setUserSignup] = useState({
-    signupName: "",
-    signupPass: "",
-  });
+  // const [userSignup, setUserSignup] = useState({
+  //   signupName: "",
+  //   signupPass: "",
+  // });
 
-  const [userLogin, setUserLogin] = useState({
-    loginName: "",
-    loginPass: "",
-  });
+  // const [userLogin, setUserLogin] = useState({
+  //   loginName: "",
+  //   loginPass: "",
+  // });
 
-  const onChangeUserSignup = (event) => {
-    setUserSignup({
-      ...userSignup,
-      [event.target.id]: event.target.value,
-    });
-  };
+  // const onChangeUserSignup = (event) => {
+  //   setUserSignup({
+  //     ...userSignup,
+  //     [event.target.id]: event.target.value,
+  //   });
+  // };
 
-  const onChangeUserLogin = (event) => {
-    setUserLogin({
-      ...userLogin,
-      [event.target.id]: event.target.value,
-    });
-  };
+  // const onChangeUserLogin = (event) => {
+  //   setUserLogin({
+  //     ...userLogin,
+  //     [event.target.id]: event.target.value,
+  //   });
+  // };
 
-  const registerNewUser = () => {
-    setRegisteredUsers([...registeredUsers, { ...userSignup }]);
-  };
+  // const registerNewUser = () => {
+  //   setRegisteredUsers([...registeredUsers, { ...userSignup }]);
+  // };
 
-  const loginCurrentUser = () => {
-    let verified = registeredUsers.some((e) => {
-      return (
-        e.signupName === userLogin.loginName &&
-        e.signupPass === userLogin.loginPass
-      );
-    });
-    setUserAuth(verified);
-    verified &&
-      window.localStorage.setItem("currentUser", JSON.stringify(userLogin));
-    verified && setLogin(false);
-  };
+  // const loginCurrentUser = () => {
+  //   let verified = registeredUsers.some((e) => {
+  //     return (
+  //       e.signupName === userLogin.loginName &&
+  //       e.signupPass === userLogin.loginPass
+  //     );
+  //   });
+  //   setUserAuth(verified);
+  //   verified &&
+  //     window.localStorage.setItem("currentUser", JSON.stringify(userLogin));
+  //   verified && setLogin(false);
+  // };
 
-  useEffect(() => {
-    if (localStorage.getItem("registeredUsers")) {
-      setRegisteredUsers(JSON.parse(localStorage.getItem("registeredUsers")));
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (localStorage.getItem("registeredUsers")) {
+  //     setRegisteredUsers(JSON.parse(localStorage.getItem("registeredUsers")));
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    window.localStorage.setItem(
-      "registeredUsers",
-      JSON.stringify(registeredUsers)
-    );
-  }, [registeredUsers]);
+  // useEffect(() => {
+  //   window.localStorage.setItem(
+  //     "registeredUsers",
+  //     JSON.stringify(registeredUsers)
+  //   );
+  // }, [registeredUsers]);
 
-  useEffect(() => {
-    setUserSignup({
-      signupName: "",
-      signupPass: "",
-    });
+  // useEffect(() => {
+  //   setUserSignup({
+  //     signupName: "",
+  //     signupPass: "",
+  //   });
 
-    setUserLogin({
-      loginName: "",
-      loginPass: "",
-    });
-  }, [signup, login]);
+  //   setUserLogin({
+  //     loginName: "",
+  //     loginPass: "",
+  //   });
+  // }, [signup, login]);
 
   return (
     <div className="wrapper">
-      {!signup && !login && (
+      {/* {!signup && !login && (
         <button
           className={"btn__customSerie"}
           onClick={() => navigate("/categories")}
@@ -105,7 +105,7 @@ export function Home({ login, signup, setLogin, setSignup }) {
           loginCurrentUser={loginCurrentUser}
           setSignup={setSignup}
         />
-      )}
+      )} */}
     </div>
   );
 }

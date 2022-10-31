@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import { AuthContext } from "../../context/AuthContext.js";
+// import { useContext } from "react";
+// import { AuthContext } from "../../context/AuthContext.jsx";
 
 export function Header({ showSignup, showLogin, logout }) {
-  const { userAuth } = useContext(AuthContext);
+  // const { userAuth } = useContext(AuthContext);
 
   return (
     <header>
@@ -29,7 +29,7 @@ export function Header({ showSignup, showLogin, logout }) {
           </li>
         </ul>
       </nav>
-      <div className="logingsignup__nav">
+      {/* <div className="logingsignup__nav">
         {!userAuth ? (
           <div className="header__wrapper__btn">
             <button className="header__btn" onClick={() => showLogin()}>
@@ -46,7 +46,7 @@ export function Header({ showSignup, showLogin, logout }) {
             </button>
           </div>
         )}
-      </div>
+      </div> */}
     </header>
   );
 }

@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import "./PositionSvg.css";
 
 export function PositionSvg({ id, size }) {
   let [svg, setSvg] = useState("");
