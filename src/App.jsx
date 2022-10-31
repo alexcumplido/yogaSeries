@@ -10,7 +10,6 @@ import { CategoryPositions } from "./pages/CategoryPositions/CategoryPositions.j
 import { CustomSerie } from "./pages/CustomSerie/CustomSerie.jsx";
 import { Serie } from "./pages/Serie/Serie.jsx";
 import { ErrorRoute } from "./components/ErrorRoute/ErrorRoute.jsx";
-import "./index.css";
 
 export function App() {
   const navigate = useNavigate();
