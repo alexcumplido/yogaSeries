@@ -1,16 +1,17 @@
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import { AuthContext } from "./context/AuthContext.js";
-import { RequireAuth } from "./components/RequireAuth/RequireAuth.js";
-import { Header } from "./components/Header/Header.js";
-import { Home } from "./pages/Home/Home.js";
-import { Categories } from "./pages/Categories/Categories.js";
-import { CategoryPositions } from "./pages/CategoryPositions/CategoryPositions.js";
-import { CustomSerie } from "./pages/CustomSerie/CustomSerie.js";
-import { Serie } from "./pages/Serie/Serie.js";
-import { ErrorRoute } from "./components/ErrorRoute/ErrorRoute.js";
+import { AuthContext } from "./context/AuthContext.jsx";
+import { RequireAuth } from "./components/RequireAuth/RequireAuth.jsx";
+import { Header } from "./components/Header/Header.jsx";
+import { Home } from "./pages/Home/Home.jsx";
+import { Categories } from "./pages/Categories/Categories.jsx";
+import { CategoryPositions } from "./pages/CategoryPositions/CategoryPositions.jsx";
+import { CustomSerie } from "./pages/CustomSerie/CustomSerie.jsx";
+import { Serie } from "./pages/Serie/Serie.jsx";
+import { ErrorRoute } from "./components/ErrorRoute/ErrorRoute.jsx";
 import "./index.css";
+
 export function App() {
   const navigate = useNavigate();
   const [userAuth, setUserAuth] = useState(false);
