@@ -3,7 +3,6 @@ import { useState, useEffect, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext.jsx";
 import { Login } from "../../components/Form/Login.jsx";
 import { Signup } from "../../components/Form/Signup.jsx";
-import "./Home.css";
 
 export function Home({ login, signup, setLogin, setSignup }) {
   let navigate = useNavigate();
