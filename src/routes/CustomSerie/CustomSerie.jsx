@@ -26,7 +26,7 @@ export function CustomSerie() {
   };
 
   function fetchResponse() {
-    fetch("./dataPoses.json")
+    fetch("../../assets/dataPoses.json")
       .then((response) => response.json())
       .then((result) => setResponse({ ...result }))
       .catch((error) => console.log(error));

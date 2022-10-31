@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 
 export function Categories() {
   const [response, setResponse] = useState();
-
   function fetchResponse() {
-    fetch("./dataCategories.json")
+    fetch("../../assets/dataCategories.json")
       .then((response) => response.json())
       .then((result) => setResponse({ ...result }))
       .catch((error) => console.log(error));
