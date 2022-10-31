@@ -1,0 +1,9 @@
+@import url("./reset.css");
+@import url("./global.css");
+@import url("../components/Header/Header.css");
+@import url("../routes/Categories/Categories.css");
+@import url("../routes/CategoryPositions/CategoryPositions.css");
+@import url("../routes/CustomSerie/CustomSerie.css");
+@import url("../routes/Home/Home.css");
+@import url("../routes/Serie/Serie.css");
+@import url("../components/PositionSvg/PositionSvg.css");

@@ -1,0 +1,43 @@
+:root {
+  --white: #ffffff;
+  --white-light: #fdfdfd;
+  --white-lightMiddle: #f4f8f8;
+  --white-midle: #f4f5f5;
+  --white-dark: #ebe7e7;
+  --yellow: #fcba03;
+  --red-light: #a72440;
+  --blue-midle: #106ae0;
+  --blue-dark: #1363cc;
+  --grey-light: #e2e1cb;
+  --grey-midle: #777777;
+  --grey-dark: #3a3a3a;
+  --dark: #1c1c1c;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  overflow-x: hidden;
+  background: var(--white-light);
+}
+
+a {
+  color: var(--grey-midle);
+}
+
+a:hover {
+  color: var(--dark);
+}

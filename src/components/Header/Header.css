@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  font-weight: 500;
+  top: 0;
+  color: var(--grey-dark);
+  background: var(--white-light);
+  opacity: 1;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul .header__link {
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.logingsignup__nav {
+  display: flex;
+}
+
+.header__wrapper__btn {
+  display: flex;
+  align-items: center;
+}
+
+.header__btn {
+  font-size: 1rem;
+  width: 5rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border: none;
+  background: none;
+  color: var(--grey-midle);
+  cursor: pointer;
+}
+
+.header__btn:hover {
+  color: var(--dark);
+}
