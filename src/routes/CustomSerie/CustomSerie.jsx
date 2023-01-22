@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { PositionSvg } from "../../components/PositionSvg/PosistionSvg.jsx";
 import { Link } from "react-router-dom";
-import dataPoses from "../../assets/dataPoses.json";
 
 export function CustomSerie() {
   const [response, setResponse] = useState();
@@ -27,11 +26,10 @@ export function CustomSerie() {
   };
 
   function fetchResponse() {
-    setResponse({ ...dataPoses });
-    // fetch("../../assets/dataPoses.json")
-    //   .then((response) => response.json())
-    //   .then((result) => setResponse({ ...result }))
-    //   .catch((error) => console.log(error));
+    fetch("https://yoga-poses-l5sh.onrender.com/api/yoga/poses")
+      .then((response) => response.json())
+      .then((result) => setResponse({ ...result }))
+      .catch((error) => console.log(error));
   }
 
   function addPosition(id) {
