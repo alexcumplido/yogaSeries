@@ -26,7 +26,7 @@ export function CustomSerie() {
   };
 
   function fetchResponse() {
-    fetch("https://yoga-poses-l5sh.onrender.com/api/yoga/poses")
+    fetch("https://yoga-api-nzy4.onrender.com/api/yoga/poses")
       .then((response) => response.json())
       .then((result) => setResponse({ ...result }))
       .catch((error) => console.log(error));

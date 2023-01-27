@@ -7,7 +7,7 @@ export function Categories() {
   function getPostures() {
     // setResponse({ ...categoryPoses });
     // console.log("hello");
-    fetch("https://yoga-poses-l5sh.onrender.com/api/yoga/categories")
+    fetch("https://yoga-api-nzy4.onrender.com/api/yoga/categories")
       .then((response) => response.json())
       .then((result) => setResponse({ ...result }))
       .catch((error) => console.log(error));
