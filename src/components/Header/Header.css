@@ -10,7 +10,7 @@ header {
   background: var(--white-light);
   opacity: 1;
 }
-
+/**/
 nav ul {
   display: flex;
   align-items: center;
