@@ -28,7 +28,7 @@ export function CustomSerie() {
   function fetchResponse() {
     fetch("https://yoga-api-nzy4.onrender.com/api/yoga/poses")
       .then((response) => response.json())
-      .then((result) => setResponse({ ...result }))
+      .then((result) => setResponse([...result]))
       .catch((error) => console.log(error));
   }
 
@@ -60,8 +60,8 @@ export function CustomSerie() {
   }
 
   let listItems =
-    response &&
-    response.items.map((element, idx) => {
+    response !== undefined &&
+    response.map((element, idx) => {
       return (
         <li className="link__item__custom" key={idx}>
           <PositionSvg id={element.id} />
@@ -74,6 +74,7 @@ export function CustomSerie() {
       );
     });
 
+  console.log(response);
   useEffect(() => {
     fetchResponse();
   }, []);
